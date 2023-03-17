@@ -18,14 +18,79 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
-
+#menu, #logo {
+    line-height: 75px;
+}
 #menu li {
     float:right;
     margin-right: 30px;
     list-style-type: none;
+}
+#menu a {
+    text-decoration: none;
+}
+#menu a:hover {
+    border-bottom: 5px solid #3a3a3a;
+}
+.active {
+    border-bottom: 5px solid #3a3a3a;
+}
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center;
+
+    /* Animation on loading*/
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-full-mode: forward;
+}
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+#club-ethos {
+    height: 600px;
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;  
+    float: left;
+    background-color: aqua;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: green;
+
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: grey;
+
 }
